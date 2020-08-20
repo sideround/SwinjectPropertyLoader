@@ -7,6 +7,7 @@
 //
 
 import Swinject
+import ObjectiveC.runtime
 
 private struct AssociatedKeys {
     fileprivate static var properties: UInt8 = 0
