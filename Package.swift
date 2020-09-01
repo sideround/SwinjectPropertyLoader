@@ -6,10 +6,10 @@ import PackageDescription
 let package = Package(
     name: "SwinjectPropertyLoader",
     products: [
-        .library(name: "SwinjectPropertyLoader", targets: ["SwinjectPropertyLoader"]),
+        .library(name: "SwinjectPropertyLoader", type: .dynamic, targets: ["SwinjectPropertyLoader"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/Swinject/Swinject", from: "2.0.0"),
+        .package(url: "https://github.com/sideround/Swinject", .branch("master")),
     ],
     targets: [
         .target(name: "SwinjectPropertyLoader", dependencies: ["Swinject"], path: "Sources"),
